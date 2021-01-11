@@ -28,7 +28,6 @@ for fname in img_list:
             # Draw bboxes
             cv2.rectangle(img, (x1,y1), (x2,y2), (0, 255, 0), 4)
             # Add texts
-            font = 'FONT_HERSHEY_SUPLEX'
             text = str(ann['category_id'])
             cv2.putText(img, text, (x1, y1 - 1), 2, 2, (0, 255, 0), 1)
             cv2.imwrite('/home/lsc/Kaggle/xray_gt/%s.jpg' % ann['image_id'], img)
