@@ -1,2 +1,2 @@
 # CV-Analysis-Toolkit
-Visualize scale, bbox, anchor, etc.
+Analyse scale, bbox, anchor, etc.
