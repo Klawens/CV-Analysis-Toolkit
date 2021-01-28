@@ -20,6 +20,6 @@ for i in f['annotations']:
         m += 1
     if i['bbox'][2] * i['bbox'][3] <= thr_min:
         n += 1
-print('Min anchor size: {}\nMax anchor size: {}\n{} anchors smaller than threshold {} x {}\n{} anchors bigger than threshold {} x {}'.format(min(size), max(size), n, min_scales, min_strides, m, max_scales, max_strides))
+print('Min bbox size: {}\nMax bbox size: {}\n{} bboxes smaller than threshold {} x {}\n{} bboxes bigger than threshold {} x {}'.format(min(size), max(size), n, min_scales, min_strides, m, max_scales, max_strides))
 # plt.plot(size)
 # plt.show()
