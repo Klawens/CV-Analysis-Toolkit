@@ -15,8 +15,8 @@ for fname in img_list:
             x1, y1 = ann['bbox'][0], ann['bbox'][1]
             x2, y2 = ann['bbox'][2], ann['bbox'][3]
             # Draw bboxes
-            cv2.rectangle(img, (x1,y1), (x2,y2), (0, 0, 255), 3)
+            cv2.rectangle(img, (int(x1),int(y1),int(x2),int(y2)), (0, 0, 255), 2)
             # Add texts
             text = str(ann['category'])
-            cv2.putText(img, text, (x1, y1 - 2), 2, 2, (0, 0, 255), 1)
+            cv2.putText(img, text, (int(x1), int(y1 - 1)), 2, 2, (0, 0, 255), 1)
             cv2.imwrite('/home/lsc/Kaggle/xray_gt/inference/%s.jpg' % ann['name'], img)
