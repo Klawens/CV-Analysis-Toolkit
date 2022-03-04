@@ -19,4 +19,4 @@ for fname in img_list:
             # Add texts
             # text = str(ann['category'])
             # cv2.putText(img, text, (int(x1), int(y1 - 1)), 2, 2, (0, 0, 255), 1)
-            cv2.imwrite('p_r/%s.jpg' % ann['name'], img)
+            cv2.imwrite('p_r/%s.jpg' % ann['image_id'], img)
